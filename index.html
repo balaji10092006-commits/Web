@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maya Solano — Accessible Frontend Developer</title>
+  <meta name="description" content="Maya Solano is a frontend developer building fast, semantic, WCAG-compliant web experiences. View her projects, background, and get in touch." />
+  <meta name="keywords" content="accessible web developer, semantic HTML, WCAG, frontend developer portfolio, ARIA, inclusive design" />
+  <meta name="author" content="Maya Solano" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mayasolano.dev/index.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Maya Solano — Accessible Frontend Developer" />
+  <meta property="og:description" content="Frontend developer building fast, semantic, WCAG-compliant web experiences." />
+  <meta property="og:url" content="https://mayasolano.dev/index.html" />
+  <meta property="og:image" content="https://mayasolano.dev/assets/og-cover.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Maya Solano — Accessible Frontend Developer" />
+  <meta name="twitter:description" content="Frontend developer building fast, semantic, WCAG-compliant web experiences." />
+  <meta name="twitter:image" content="https://mayasolano.dev/assets/og-cover.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2317191c%22/><text x=%2216%22 y=%2222%22 font-size=%2216%22 fill=%22%23f6f4ef%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22>M</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Maya Solano",
+    "url": "https://mayasolano.dev/index.html",
+    "jobTitle": "Frontend Developer",
+    "description": "Frontend developer specializing in semantic HTML5 and WCAG-compliant, accessible web experiences.",
+    "sameAs": [
+      "https://github.com/mayasolano",
+      "https://www.linkedin.com/in/mayasolano",
+      "https://mastodon.social/@mayasolano"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo-mark" href="index.html">maya<span>.</span>solano</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="wrap">
+        <div class="hero__intro">
+          <p class="eyebrow">Frontend developer · Accessibility advocate</p>
+          <h1 id="hero-heading">I build interfaces that work for every keyboard, screen reader, and browser.</h1>
+          <p>Five years designing and shipping production interfaces for teams who care that <strong>everyone</strong> can use what they build — not just the people testing with a mouse. Semantic markup first, ARIA only when native HTML can't do the job.</p>
+          <div class="hero__actions">
+            <a class="button" href="projects.html">View my work</a>
+            <a class="button button--ghost" href="contact.html">Start a conversation</a>
+          </div>
+        </div>
+
+        <aside class="tab-path" aria-label="Keyboard navigation preview">
+          <h2>Press <kbd>Tab</kbd> from here</h2>
+          <ol>
+            <li>Skip to main content link</li>
+            <li>Home (current page)</li>
+            <li>About</li>
+            <li>Projects</li>
+            <li>Contact</li>
+            <li>“View my work” button</li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="section__heading">
+          <h2 id="work-heading">Selected work</h2>
+          <p><a href="projects.html">See all projects →</a></p>
+        </div>
+
+        <div class="grid grid--projects">
+          <article class="card">
+            <figure>
+              <img src="https://placehold.co/640x360/e3ede9/073f3a?text=Transit+Board" alt="Screen reader announcing a live-updating transit departure board, shown with captioned focus outlines" />
+            </figure>
+            <h3>Live Transit Board</h3>
+            <p>A real-time departures board built with an ARIA live region so delays and platform changes are announced without disrupting the user's place on the page.</p>
+            <ul class="tag-list">
+              <li>ARIA live regions</li>
+              <li>Vanilla JS</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="https://placehold.co/640x360/e3ede9/073f3a?text=Checkout+Flow" alt="Multi-step checkout form with a visible step indicator and error summary region" />
+            </figure>
+            <h3>Accessible Checkout Flow</h3>
+            <p>A three-step checkout rebuilt around native form elements, fieldset grouping, and an error summary that receives focus on submit.</p>
+            <ul class="tag-list">
+              <li>Forms</li>
+              <li>WCAG 2.2 AA</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="https://placehold.co/640x360/e3ede9/073f3a?text=Docs+Site" alt="Documentation site with a keyboard-operable command palette open over the page" />
+            </figure>
+            <h3>Docs Command Palette</h3>
+            <p>A searchable command palette for a documentation site, fully operable by keyboard with roving tabindex and typeahead announcements.</p>
+            <ul class="tag-list">
+              <li>Roving tabindex</li>
+              <li>Search UI</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="approach-heading">
+      <div class="wrap">
+        <h2 id="approach-heading">How I work</h2>
+        <div class="grid grid--skills">
+          <div class="card">
+            <h3>Semantic first</h3>
+            <p>Native <code>&lt;button&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;fieldset&gt;</code> elements before a single line of ARIA. Less JavaScript, fewer edge cases.</p>
+          </div>
+          <div class="card">
+            <h3>Tested with real tools</h3>
+            <p>Every interface is walked through with a keyboard only, then with VoiceOver or NVDA, before it's called done.</p>
+          </div>
+          <div class="card">
+            <h3>Built to hold contrast</h3>
+            <p>Color pairings are checked against WCAG AA at minimum, and focus states are never invisible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-note">© 2026 Maya Solano. Built with semantic HTML5 and no framework.</p>
+      <nav class="social-nav" aria-label="Social media">
+        <ul>
+          <li><a href="https://github.com/mayasolano">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mayasolano">LinkedIn</a></li>
+          <li><a href="https://mastodon.social/@mayasolano">Mastodon</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

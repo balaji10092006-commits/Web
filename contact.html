@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Maya Solano</title>
+  <meta name="description" content="Get in touch with Maya Solano about frontend development, accessibility audits, or WCAG consulting work." />
+  <meta name="keywords" content="contact accessibility developer, hire frontend developer, WCAG consulting" />
+  <meta name="author" content="Maya Solano" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mayasolano.dev/contact.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact — Maya Solano" />
+  <meta property="og:description" content="Get in touch about frontend development, accessibility audits, or WCAG consulting work." />
+  <meta property="og:url" content="https://mayasolano.dev/contact.html" />
+  <meta property="og:image" content="https://mayasolano.dev/assets/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Maya Solano" />
+  <meta name="twitter:description" content="Get in touch about frontend development, accessibility audits, or WCAG consulting work." />
+  <meta name="twitter:image" content="https://mayasolano.dev/assets/og-cover.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2317191c%22/><text x=%2216%22 y=%2222%22 font-size=%2216%22 fill=%22%23f6f4ef%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22>M</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo-mark" href="index.html">maya<span>.</span>solano</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" aria-labelledby="contact-heading" style="padding-top: var(--space-6);">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1 id="contact-heading">Tell me about the project.</h1>
+        <p>Every field marked <span class="required-flag" aria-hidden="true">*</span><span class="visually-hidden">required</span> is required. The form is fully operable by keyboard — tab through it in order, and use arrow keys inside the response-method group.</p>
+
+        <div class="contact-layout">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div
+              id="form-summary"
+              class="error-text"
+              role="alert"
+              aria-live="assertive"
+              tabindex="-1"
+              style="display: none;"
+            ></div>
+
+            <div
+              id="form-success"
+              class="form-note"
+              role="status"
+              aria-live="polite"
+            ></div>
+
+            <fieldset>
+              <legend>Your details</legend>
+
+              <div class="form-field" id="field-name">
+                <label for="name">Full name<span class="required-flag" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                  aria-describedby="name-error"
+                />
+                <span class="error-text" id="name-error">Enter your full name.</span>
+              </div>
+
+              <div class="form-field" id="field-email">
+                <label for="email">Email address<span class="required-flag" aria-hidden="true">*</span></label>
+                <span class="hint" id="email-hint">Used only to reply to your message.</span>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="email-hint email-error"
+                />
+                <span class="error-text" id="email-error">Enter a valid email address.</span>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>How should I respond?</legend>
+              <div class="form-field" role="radiogroup" aria-labelledby="respond-legend">
+                <span id="respond-legend" class="visually-hidden">Preferred response method</span>
+                <p>
+                  <label>
+                    <input type="radio" name="respond-method" value="email" checked />
+                    Email
+                  </label>
+                  &nbsp;&nbsp;
+                  <label>
+                    <input type="radio" name="respond-method" value="phone" />
+                    Phone
+                  </label>
+                </p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Project</legend>
+
+              <div class="form-field" id="field-type">
+                <label for="project-type">Project type</label>
+                <select id="project-type" name="project-type">
+                  <option value="audit">Accessibility audit</option>
+                  <option value="build">New site build</option>
+                  <option value="consulting">Ongoing consulting</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="form-field" id="field-message">
+                <label for="message">Message<span class="required-flag" aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  aria-required="true"
+                  aria-describedby="message-error"
+                ></textarea>
+                <span class="error-text" id="message-error">Tell me a little about the project.</span>
+              </div>
+
+              <div class="form-field">
+                <label>
+                  <input type="checkbox" name="newsletter" value="yes" />
+                  Send me occasional notes on accessible frontend patterns
+                </label>
+              </div>
+            </fieldset>
+
+            <button class="button" type="submit">Send message</button>
+            <p class="form-note">Submitting sends a message directly to my inbox — no account required.</p>
+          </form>
+
+          <aside class="contact-info" aria-labelledby="other-ways-heading">
+            <h2 id="other-ways-heading">Other ways to reach me</h2>
+            <p>I typically reply within two business days.</p>
+            <dl>
+              <dt>Email</dt>
+              <dd><a href="mailto:hello@mayasolano.dev">hello@mayasolano.dev</a></dd>
+
+              <dt>Based in</dt>
+              <dd>Portland, Oregon, USA — working with clients everywhere</dd>
+
+              <dt>Response time</dt>
+              <dd>1–2 business days</dd>
+
+              <dt>Elsewhere</dt>
+              <dd>
+                <a href="https://github.com/mayasolano">GitHub</a>,
+                <a href="https://www.linkedin.com/in/mayasolano">LinkedIn</a>
+              </dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-note">© 2026 Maya Solano. Built with semantic HTML5 and no framework.</p>
+      <nav class="social-nav" aria-label="Social media">
+        <ul>
+          <li><a href="https://github.com/mayasolano">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mayasolano">LinkedIn</a></li>
+          <li><a href="https://mastodon.social/@mayasolano">Mastodon</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById("contact-form");
+      var summary = document.getElementById("form-summary");
+      var success = document.getElementById("form-success");
+
+      var fields = [
+        { id: "name", wrapper: "field-name" },
+        { id: "email", wrapper: "field-email" },
+        { id: "message", wrapper: "field-message" }
+      ];
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        success.textContent = "";
+
+        var errors = [];
+
+        fields.forEach(function (field) {
+          var input = document.getElementById(field.id);
+          var wrapper = document.getElementById(field.wrapper);
+          var isValid = input.checkValidity();
+          wrapper.classList.toggle("has-error", !isValid);
+          if (!isValid) {
+            errors.push({ id: field.id, label: wrapper.querySelector("label").textContent.replace("*", "").trim() });
+          }
+        });
+
+        if (errors.length > 0) {
+          var list = errors
+            .map(function (e) {
+              return e.label;
+            })
+            .join(", ");
+          summary.textContent = "Please fix the following before sending: " + list + ".";
+          summary.style.display = "block";
+          summary.focus();
+        } else {
+          summary.style.display = "none";
+          summary.textContent = "";
+          success.textContent = "Thanks — your message has been sent. I'll reply within two business days.";
+          form.reset();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

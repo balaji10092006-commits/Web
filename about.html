@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Maya Solano</title>
+  <meta name="description" content="Learn about Maya Solano's background in accessible frontend development, her experience, and the tools and standards she works with." />
+  <meta name="keywords" content="accessibility developer bio, WCAG experience, frontend developer background" />
+  <meta name="author" content="Maya Solano" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mayasolano.dev/about.html" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="About — Maya Solano" />
+  <meta property="og:description" content="Background, experience, and working principles of accessibility-focused frontend developer Maya Solano." />
+  <meta property="og:url" content="https://mayasolano.dev/about.html" />
+  <meta property="og:image" content="https://mayasolano.dev/assets/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About — Maya Solano" />
+  <meta name="twitter:description" content="Background, experience, and working principles of accessibility-focused frontend developer Maya Solano." />
+  <meta name="twitter:image" content="https://mayasolano.dev/assets/og-cover.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2317191c%22/><text x=%2216%22 y=%2222%22 font-size=%2216%22 fill=%22%23f6f4ef%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22>M</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo-mark" href="index.html">maya<span>.</span>solano</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" aria-labelledby="about-heading" style="padding-top: var(--space-6);">
+      <div class="wrap">
+        <p class="eyebrow">About</p>
+        <h1 id="about-heading">I spent the first two years of my career fixing things I'd built the wrong way the first time.</h1>
+        <p>That's not a complaint — it's the fastest way I know to learn what "accessible" actually means in practice. Now I lead frontend builds where accessibility is a requirement from the first wireframe, not a pass at the end. I care about the same things a good print typesetter cares about: order, hierarchy, and making sure nothing is lost when the medium changes.</p>
+        <p>Outside of client work, I maintain a small open-source library of accessible form patterns and mentor two developers transitioning into frontend roles.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="experience-heading">
+      <div class="wrap">
+        <h2 id="experience-heading">Experience</h2>
+        <ol class="timeline">
+          <li>
+            <article aria-labelledby="job-1">
+              <time datetime="2024">2024 — Present</time>
+              <h3 id="job-1">Senior Frontend Developer, Northbridge Transit Co-op</h3>
+              <p>Rebuilt the public trip-planning site to meet WCAG 2.2 AA, including the live departures board and a fully keyboard-operable route map. Reduced reported accessibility defects by 90% over one year.</p>
+            </article>
+          </li>
+          <li>
+            <article aria-labelledby="job-2">
+              <time datetime="2022">2022 — 2024</time>
+              <h3 id="job-2">Frontend Developer, Fielding &amp; Co.</h3>
+              <p>Owned the design system's form and navigation components, writing the accessibility guidelines that shipped with every release.</p>
+            </article>
+          </li>
+          <li>
+            <article aria-labelledby="job-3">
+              <time datetime="2021">2021 — 2022</time>
+              <h3 id="job-3">Junior Developer, Ashgrove Studio</h3>
+              <p>Learned semantic HTML the hard way: rebuilding a client's <code>&lt;div&gt;</code>-only marketing site after a failed accessibility audit.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills-heading">
+      <div class="wrap">
+        <h2 id="skills-heading">Tools &amp; standards</h2>
+        <div class="grid grid--skills">
+          <div class="card">
+            <h3>Markup &amp; standards</h3>
+            <p>Semantic HTML5, WCAG 2.2, ARIA Authoring Practices, SEO fundamentals.</p>
+          </div>
+          <div class="card">
+            <h3>Testing</h3>
+            <p>Keyboard-only walkthroughs, NVDA, VoiceOver, axe DevTools, Lighthouse.</p>
+          </div>
+          <div class="card">
+            <h3>Build</h3>
+            <p>HTML, CSS (Grid &amp; custom properties), vanilla JavaScript, light framework work in React when a project calls for it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-note">© 2026 Maya Solano. Built with semantic HTML5 and no framework.</p>
+      <nav class="social-nav" aria-label="Social media">
+        <ul>
+          <li><a href="https://github.com/mayasolano">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mayasolano">LinkedIn</a></li>
+          <li><a href="https://mastodon.social/@mayasolano">Mastodon</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

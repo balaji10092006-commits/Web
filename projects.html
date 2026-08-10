@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Maya Solano</title>
+  <meta name="description" content="Case studies of accessible frontend projects by Maya Solano, including live regions, accessible forms, and keyboard-operable interfaces." />
+  <meta name="keywords" content="accessible web projects, WCAG case studies, ARIA live region example, accessible form example" />
+  <meta name="author" content="Maya Solano" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mayasolano.dev/projects.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects — Maya Solano" />
+  <meta property="og:description" content="Case studies of accessible frontend projects: live regions, accessible forms, and keyboard-operable interfaces." />
+  <meta property="og:url" content="https://mayasolano.dev/projects.html" />
+  <meta property="og:image" content="https://mayasolano.dev/assets/og-cover.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects — Maya Solano" />
+  <meta name="twitter:description" content="Case studies of accessible frontend projects: live regions, accessible forms, and keyboard-operable interfaces." />
+  <meta name="twitter:image" content="https://mayasolano.dev/assets/og-cover.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%2317191c%22/><text x=%2216%22 y=%2222%22 font-size=%2216%22 fill=%22%23f6f4ef%22 text-anchor=%22middle%22 font-family=%22Georgia,serif%22>M</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo-mark" href="index.html">maya<span>.</span>solano</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" aria-labelledby="projects-heading" style="padding-top: var(--space-6);">
+      <div class="wrap">
+        <p class="eyebrow">Projects</p>
+        <h1 id="projects-heading">Case studies</h1>
+        <p>A selection of interfaces where accessibility shaped the architecture, not just the styling. Each project links to a short write-up and, where the client allows it, a live demo.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Project list">
+      <div class="wrap">
+        <div class="grid grid--projects">
+          <article class="card" aria-labelledby="proj-1">
+            <figure>
+              <img src="https://placehold.co/640x360/e3ede9/073f3a?text=Transit+Board" alt="Live transit departure board with an announced status update for a delayed train" />
+            </figure>
+            <h2 id="proj-1">Live Transit Board</h2>
+            <p>Northbridge Transit's departures board updates every 15 seconds. Delays and platform changes are pushed into a polite ARIA live region so screen reader users hear updates without losing their place in the page.</p>
+            <ul class="tag-list">
+              <li>ARIA live regions</li>
+              <li>Vanilla JS</li>
+              <li>Real-time data</li>
+            </ul>
+            <p class="card__links">
+              <a href="#">Read case study</a>
+              <a href="#">Live demo</a>
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="proj-2">
+            <figure>
+              <img src="https://placehold.co/640x360/e3ede9/073f3a?text=Checkout+Flow" alt="Three step checkout form with a step indicator and an error summary listing two fields to fix" />
+            </figure>
+            <h2 id="proj-2">Accessible Checkout Flow</h2>
+            <p>A checkout rebuilt around <code>&lt;fieldset&gt;</code> grouping and native validation. On submit, an error summary receives focus and lists every problem as a linked list, so keyboard and screen reader users can jump straight to the fix.</p>
+            <ul class="tag-list">
+              <li>Forms</li>
+              <li>WCAG 2.2 AA</li>
+              <li>Error handling</li>
+            </ul>
+            <p class="card__links">
+              <a href="#">Read case study</a>
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="proj-3">
+            <figure>
+              <img src="https://placehold.co/640x360/e3ede9/073f3a?text=Docs+Site" alt="Documentation site with a command palette open, showing highlighted search results" />
+            </figure>
+            <h2 id="proj-3">Docs Command Palette</h2>
+            <p>A <kbd>Cmd</kbd>+<kbd>K</kbd> search palette for a documentation site. Built with roving tabindex so arrow keys move through results the same way they would in a native menu, with the current match announced via <code>aria-activedescendant</code>.</p>
+            <ul class="tag-list">
+              <li>Roving tabindex</li>
+              <li>Search UI</li>
+            </ul>
+            <p class="card__links">
+              <a href="#">Read case study</a>
+              <a href="#">Live demo</a>
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="proj-4">
+            <figure>
+              <img src="https://placehold.co/640x360/e3ede9/073f3a?text=Design+System" alt="Component library page showing an accessible tab panel with visible focus outlines" />
+            </figure>
+            <h2 id="proj-4">Fielding Design System</h2>
+            <p>Sixteen core components — tabs, dialogs, comboboxes, and more — each shipped with keyboard interaction docs lifted directly from the ARIA Authoring Practices Guide, plus automated axe-core checks in CI.</p>
+            <ul class="tag-list">
+              <li>Design systems</li>
+              <li>Component library</li>
+            </ul>
+            <p class="card__links">
+              <a href="#">Read case study</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-note">© 2026 Maya Solano. Built with semantic HTML5 and no framework.</p>
+      <nav class="social-nav" aria-label="Social media">
+        <ul>
+          <li><a href="https://github.com/mayasolano">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mayasolano">LinkedIn</a></li>
+          <li><a href="https://mastodon.social/@mayasolano">Mastodon</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
